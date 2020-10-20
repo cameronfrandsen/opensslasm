@@ -5,6 +5,7 @@ if(NOT EXISTS ${NODE_DIR})
   message(FATAL_ERROR "directory ${NODE_DIR} does not exist: update NODE_VER (${NODE_VER})?")
 endif()
 foreach(d
+  archs/linux-aarch64/*.S
   archs/linux-x86_64/*.s
   archs/VC-WIN64A/*.asm
   )
